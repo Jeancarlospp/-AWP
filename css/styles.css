@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #faf8f8 0%, #f5f0f0 100%);
+    background-attachment: fixed;
+    color: #333;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.izquierda {
+    width: 30%;
+    background-color: #722f37;
+    color: white;
+    padding: 40px 30px;
+    min-height: 100vh;
+}
+
+.derecha {
+    width: 70%;
+    padding: 40px 50px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.foto {
+    width: 100%;
+    border-radius: 12px; /* Aqui estoy aplicando el borde redondo*/
+    margin-bottom: 20px;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+
+h1 .nombre {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: #c58547;
+}
+
+h1.nombre {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: #722f37;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #424242;
+    margin-top: -10px;
+}
+
+h3 {
+    border-bottom: 2px solid #722f37;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #8b1538;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para navegación */
+.menu-navegacion {
+    margin-bottom: 20px;
+}
+
+.menu-navegacion a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #e8b4cb;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: color 0.3s ease;
+}
+
+.menu-navegacion a:hover {
+    color: rgb(113, 21, 21);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 10px;
+}
+
+/* Estilos para pasatiempos */
+.pasatiempo {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fdf9fa;
+    border-radius: 10px;
+    border-left: 4px solid #722f37;
+}
+
+.img-pasatiempo {
+    margin-right: 15px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.texto-pasatiempo h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.texto-pasatiempo p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Estilos adicionales para párrafos */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+p strong {
+    color:  #e8b4cb;
+}
+
+/* Estilos adicionales para la columna izquierda */
+.izquierda h3 {
+    color: white;
+    border-bottom: 2px solid #e8b4cb;
+}
+
+/*Estilos del fomrulario */
+.form-container {
+    max-width: 600px;
+    margin: 60px auto; /* Centra horizontalmente */
+    background-color: rgba(255, 255, 255, 0.95); /* Coherente con .contenedor */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+select[multiple] {
+    height: auto;
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #722f37;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #8b1538;
+}
+
+textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #fff;
+    width: 100%;
+    resize: vertical;
+    min-height: 120px;
+    font-family: 'Segoe UI', sans-serif;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+/* Poner el cursor en el primer campo, se complementa con el autofocus*/
+input:focus,
+textarea:focus {
+    border-color: #722f37;
+    box-shadow: 0 0 6px rgba(114, 47, 55, 0.5);
+    outline: none;
+}
+
+input:valid,
+textarea:valid {
+    border-color: #4CAF50;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.5);
+}
