@@ -32,9 +32,13 @@ body {
 }
 
 .foto {
-    width: 100%;
-    border-radius: 12px; /* Aqui estoy aplicando el borde redondo*/
+    width: 60%;
+    max-width: 200px;
+    border-radius: 12px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .seccion {
